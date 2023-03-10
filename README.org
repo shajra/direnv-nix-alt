@@ -1,5 +1,5 @@
 #+title: Lorelei, an Alternative Nix extension of Direnv
-#+setupfile: doc/links.org
+#+setupfile: doc/internal/links.org
 
 [[https://github.com/shajra/direnv-nix-lorelei/actions][https://github.com/shajra/direnv-nix-lorelei/workflows/CI/badge.svg]]
 
@@ -76,11 +76,16 @@ support of Direnv with the following features:
 - You can also save a configurable number of previous environments from being
   garbage collected.
 
-Note, Lorelei only works with projects that have a Nix file that can be called
-with =nix-shell= (typically called "shell.nix"). For projects that provide a Nix
-environment with the not-yet-released Nix flakes feature, please consider using
-the =use_flake= function of the [[nixdirenv][nix-direnv]] project, which you can use
-concurrently with Lorelei with no conflicts.
+#+begin_quote
+**Note regarding flakes**: Lorelei only works with projects that have a Nix file
+that can be called with =nix-shell= (typically called "shell.nix"). For projects
+that provide a Nix environment with Nix's still-experimental /flakes/ feature,
+please consider using the =use_flake= function of the [[nixdirenv][nix-direnv]] project, which
+you can use concurrently with Lorelei with no conflicts. You may notice that
+Lorelei is developed as a flake. This is just a convenience for development and
+package installation. Lorelei supports installation both with and without
+flakes.
+#+end_quote
 
 ** About Direnv
 
@@ -114,8 +119,8 @@ Chocolatey). As a package manager, Nix helps us get tools and libraries
 installed on our system. Nix goes a bit farther, by providing us some facilities
 to help us get these tools set up in a local environment called a /Nix shell/.
 
-We typically go into a directory with with a specially configured =shell.nix=
-file, and execute ~nix-shell~ to enter into an interactive Bash session with
+We typically go into a directory with a specially configured =shell.nix= file,
+and execute ~nix-shell~ to enter into an interactive Bash session with
 environment variables set up for working in our project.
 
 Direnv can help us get rid of the extra step of having to call =nix-shell=.

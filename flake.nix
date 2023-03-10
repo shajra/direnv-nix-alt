@@ -10,7 +10,11 @@
     outputs = inputs@{ self, flake-parts, nix-project, ... }:
         flake-parts.lib.mkFlake { inherit inputs; } ({withSystem, ... }: {
             imports = [ nix-project.flakeModules.nixpkgs ];
-            systems = [ "x86_64-linux" ];
+            systems = [
+                "aarch64-darwin"
+                "x86_64-darwin"
+                "x86_64-linux"
+            ];
             perSystem = { nixpkgs, ... }:
                 let build = nixpkgs.stable.extend self.overlays.default;
                 in {

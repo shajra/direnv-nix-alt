@@ -3,6 +3,8 @@
 #+link: direnv-docs https://direnv.net/#docs
 #+link: direnv-editor https://github.com/direnv/direnv/wiki#editor-integration
 #+link: direnv-shell https://direnv.net/docs/hook.html
+#+link: docstring https://en.wikipedia.org/wiki/Docstring
+#+link: fhs https://www.pathname.com/fhs/
 #+link: github-actions https://github.com/shajra/direnv-nix-lorelei/actions
 #+link: homemanager https://github.com/nix-community/home-manager
 #+link: homemanager-manual https://rycee.gitlab.io/home-manager/

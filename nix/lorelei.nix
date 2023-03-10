@@ -4,8 +4,6 @@
 , jq
 , lib
 , lorri-envrc
-, lorri-eval-stock
-, lorri-eval-notrace
 , nix-project-lib
 , path
 , xxHash
