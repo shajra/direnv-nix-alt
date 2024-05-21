@@ -10,8 +10,8 @@
  ;; run-type must be "executable"
  (run-target-short     . "direnv")
  (run-target-long      . "bin/direnv")
- (nix-latest           . "2.14")
- (nixos-latest         . "22.11")
+ (nix-latest           . "2.21")
+ (nixos-latest         . "23.11")
  (platforms            . "\n\
 - Linux on x86-64 machines\n\
 - MacOS on x86-64 machines\n\
